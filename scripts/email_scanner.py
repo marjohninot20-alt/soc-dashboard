@@ -5,6 +5,13 @@ from datetime import datetime
 from incident_db import insert_incident
 from email_alert import send_alert_email
 
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+username = os.getenv("EMAIL_USER")
+password = os.getenv("EMAIL_PASS")
+
 def classify_severity(indicator):
     if "phishing" in indicator.lower() or "spoof" in indicator.lower():
         return "High"
@@ -34,9 +41,6 @@ def clean_text(text):
     return text
 
 def scan_inbox():
-    username = "marjohninot20@gmail.com"
-    password = "clnokqpklbxuuyxv"  # Replace with actual app password
-
     mail = imaplib.IMAP4_SSL("imap.gmail.com")
     mail.login(username, password)
     mail.select("inbox")
