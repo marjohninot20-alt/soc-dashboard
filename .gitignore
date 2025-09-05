@@ -1,19 +1,154 @@
 # Virtual environment
 venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
 
 # Python cache
 __pycache__/
 *.pyc
+*.py[codz]
+*$py.class
 
 # Environment variables
 .env
+.envrc
 
 # SQLite DB (optional if you don’t want to share real data)
 reports/incidents.db
+db.sqlite3
+db.sqlite3-journal
 
 # Logs and temp files
 *.log
 *.txt
+pip-log.txt
+pip-delete-this-directory.txt
+email_failures.log
+email_scan_log.txt
+alerts.txt
+incident_log.txt
+phishing_alerts.txt
 
-# VS Code settings (optional)
+# VS Code settings
 .vscode/
+
+# IDEs and editors
+.spyderproject
+.spyproject
+.ropeproject
+.idea/
+.abstra/
+.cursorignore
+.cursorindexingignore
+
+# Packaging and build
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+*.manifest
+*.spec
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Testing and coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py.cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# Flask
+instance/
+.webassets-cache
+
+# Django
+local_settings.py
+
+# Scrapy
+.scrapy
+
+# Sphinx
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# Pipenv / Poetry / PDM / Pixi
+Pipfile.lock
+poetry.lock
+poetry.toml
+pdm.lock
+pdm.toml
+.pdm-python
+.pdm-build/
+pixi.lock
+.pixi
+
+# PEP 582
+__pypackages__/
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath
+*.sage.py
+
+# Type checkers
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+.ruff_cache/
+
+# Marimo
+marimo/_static/
+marimo/_lsp/
+__marimo__/
+
+# PyPI
+.pypirc
