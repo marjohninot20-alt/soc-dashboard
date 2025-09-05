@@ -1,0 +1,8 @@
+{
+  "total_detections": 0,
+  "ip_detections": 0,
+  "phishing_detections": 0,
+  "ioc_matches": 0,
+  "first_detection": "",
+  "last_detection": ""
+}
